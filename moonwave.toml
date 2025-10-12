@@ -1,0 +1,42 @@
+title = "Motus"
+tagline = "Lightweight animation handler wrapper for Roblox animator objects"
+gitRepoUrl = "https://github.com/RedcliffStudios/Motus"
+gitSourceBranch = "main"
+changelog = false
+
+[[classOrder]]
+section = "Classes"
+classes = ["Motus", "MotusAnimator"]
+collapsed = false
+
+[footer]
+style = "dark"
+copyright = "© 2025 Redcliff Studios. Built with Moonwave and Docusaurus."
+
+[[navbar.items]]
+href = "https://discord.gg/uJWveb8JwW"
+label = "Discord"
+position = "right"
+
+apiCategories = [
+  "constructor",  
+  "playback",    
+  "cleanup"       
+]
+
+[home]
+enabled = true
+includeReadme = false
+bannerImage = "img/banner.png"
+
+[[home.features]]
+title = "Fast and Simple Animation API"
+description = "Motus provides a unified interface for loading, caching, and controlling animations on Roblox models."
+
+[[home.features]]
+title = "Automatic Caching"
+description = "Reuses loaded AnimationTracks to minimize performance cost and network requests."
+
+[[home.features]]
+title = "Modular and Strict-Typed"
+description = "Fully typed with strict Luau annotations for safe and predictable use in production."
