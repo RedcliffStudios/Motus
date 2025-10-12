@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[624],{4410:s=>{s.exports=JSON.parse('{"sourceUrl":"https://github.com/RedcliffStudios/Motus/blob/main","baseUrl":"/Motus/","classOrder":[{"section":"Classes","classes":["Motus","MotusAnimator"],"collapsed":false}],"apiCategories":[]}')}}]);
