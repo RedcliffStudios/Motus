@@ -54,7 +54,7 @@ UserInputService.InputBegan:Connect(function(input)
     end
 end)
 
-UserInputService.InputBegan:Connect(function(input)
+UserInputService.InputEnded:Connect(function(input)
     if input.KeyCode == Enum.KeyCode.E then
         Animator:Stop(Animation)
     end
