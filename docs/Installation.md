@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ### Method 1 - Package Manager (Wally)
 
-Using Wally, just add `motus = "notkaif/motus@1.0.0"` to your wally.toml
+Using Wally, just add `motus = "notkaif/motus@1.0.1"` to your wally.toml
 Then run
 
 ```sh
