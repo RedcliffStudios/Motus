@@ -6,6 +6,6 @@ license = "MIT"
 authors = ["Kaif"]
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
-exclude = ["README.md", ".vscode", "rokit.toml", "docs", "build", "moonwave.toml", "selene.toml"]
+exclude = ["README.md", ".vscode", "rokit.toml", "docs", "build", "moonwave.toml", "selene.toml", "art]
 
 [dependencies]

@@ -26,8 +26,8 @@ apiCategories = [
 
 [home]
 enabled = true
-includeReadme = false
-bannerImage = "img/banner.png"
+includeReadme = true
+bannerImage = "art/Logo.svg"
 
 [[home.features]]
 title = "Fast and Simple Animation API"
