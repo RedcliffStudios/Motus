@@ -64,8 +64,9 @@ end
 	@within Motus
 	@param model Model -- The model containing an `Animator` instance.
 	@return MotusAnimator -- A new `MotusAnimator` bound to the model's Animator.
+	@tag constructor
 
-	Creates a new `MotusAnimator` object and initializes the animation cache.
+	Creates a new `MotusAnimator` object
 ]=]
 function Motus.new(model: Model): MotusAnimator
 	local animator = model:FindFirstChildWhichIsA("Animator", true) :: Animator?
@@ -102,10 +103,12 @@ end
 	@param speed number?
 	@param weight number?
 	@param fadeTime number?
-	@return AnimationTrack -- The cached AnimationTrack
+	@return AnimationTrack
+	@tag playback
 
 	Plays an animation on the attached Animator.  
 	Automatically loads and caches it if necessary.
+	Returns the AnimationTrack that is being played.
 ]=]
 function Motus.Play(
 	self: MotusAnimator,
@@ -131,6 +134,7 @@ end
 	@within MotusAnimator
 	@param animation AnimationInput
 	@param fadeTime number?
+	@tag playback
 
 	Stops a single animation if it's currently playing.
 ]=]
@@ -147,6 +151,7 @@ end
 	@method StopAll
 	@within MotusAnimator
 	@param fadeTime number?
+	@tag playback
 
 	Stops all currently cached and playing animations.
 ]=]
@@ -159,9 +164,9 @@ end
 --[=[
 	@method Destroy
 	@within MotusAnimator
+	@tag cleanup
 
-	Cleans up all cached animations and destroys them.  
-	Stops all currently playing tracks and clears internal memory.
+	Cleans up all cached animations and destroys them.
 ]=]
 function Motus.Destroy(self: MotusAnimator)
 	self:StopAll(0)
